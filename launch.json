@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "PersonalityToken",
+    "name": "Personality.md",
+    "symbol": "PMD",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0xbb85c1b7540d9e7b56f7a595fc1ff7dd07cb0823"
+  },
+  "notes": "PersonalityToken (src/PersonalityToken.sol) is a plain OpenZeppelin ERC-20 named Personality.md with symbol PMD and 18 decimals. Its constructor takes no arguments and mints the whole supply of 1,000,000,000 PMD (1000000000000000000000000000 minor units) once to msg.sender, which is the factory at launch. There is no owner, minter, pauser, blacklist, fee, burn or upgrade path, so every transfer, including the factory's transfer to the MerkleDistributor, the pool seed and trader swaps through the PoolManager, moves exactly the amount stated. No application contracts are deployed with this launch, and no initialization calls are needed."
+}
